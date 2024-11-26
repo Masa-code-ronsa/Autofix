@@ -2,7 +2,7 @@
 import re
 
 # 正規表現ルールの宣言 Pythonのルールに則って宣言
-pattern = '^[a-z]{3}-(0|1)+-[A-Za-z0-9]{4,5}$'
+pattern = '^[0-9]+-[a-z]{3}-alert-(?=[0-9]+)([0-9]+)$'
 
 # マッチするか検証する文字列 特に変更せずOK
 subject = "test@example.com"
