@@ -2,7 +2,7 @@
 import re
 
 # 正規表現ルールの宣言 Pythonのルールに則って宣言
-pattern = '.*//(.*)|/*(.*?)*/'
+pattern = '(\s*,\s*)|(\s*(?:\".*?\")\s*,\s*(?:\".*?\"))'
 
 # マッチするか検証する文字列 特に変更せずOK
 subject = "test@example.com"
